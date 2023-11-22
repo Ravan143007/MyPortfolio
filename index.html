@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>My Portfolio</title>
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/apple-touch-icon.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/apple-touch-icon.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/apple-touch-icon.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/apple-touch-icon.jpeg"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/apple-touch-icon.jpeg" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+       <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("");
+      })();
+    </script>
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="#"
+              ><img src="./assets/logo.jpeg" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#">ABOUT</a></li>
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+            <li><a class="nav-link" href="#education">EDUCATION</a></li>
+            <li><a class="nav-link" href="#skills">SKILLS</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary" target="_blank"
+                href="https://drive.google.com/file/d/1RN291mmBUi31269vbgtx115GtXbedpeG/view?usp=sharing"
+                >RESUME <i class="fas fa-arrow-right">
+              </i>
+            </a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-image.jpg"
+          alt="My Image"
+          id="aboutImage"
+        />
+        <div class="popup-slider" id="popupSlider" style="color: black;">
+          <h2>About Me</h2>
+          <p>I am a motivated computer science graduate...</p>
+          <h3>&nbsp;&nbsp;Vel Tech Rangarajan Dr. Sagunthala R&D institute of science and Technology</h3>
+          <p>Bachelors in Computer Science</p>
+          <h3>&nbsp;&nbsp;Saint Louis University</h3>
+          <p>Masters in Computer Science</p>
+        </div>
+        <h1>Hi I'm Reventh Varma Peddasinghu</h1>
+
+        <div class="content-text">
+          <h2>Associate Software Engineer</h2>
+          <h2>A Master's Student</h2>
+          <p>
+            A Frontend Developer and Visual Designer with experience in web
+            design and product design.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="btn btn-secondary"
+          target="_blank"
+          >Connect With Me</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of my projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card" id="p1">
+          <div class="popup-slider" id="popupSlider1" style="color: black;">
+            <p>SALES PREDICTION USING MACHINE LEARNING</p>
+          </div>
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project One</h3>
+              <p>SALES PREDICTION USING MACHINE LEARNING</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div href="" class="card" id="p2">
+          <div class="popup-slider" id="popupSlider2" style="color: black;">
+            <p>Data deduplication is a specialized data compression technique for eliminating
+              duplicate copies of repeating data in storage. Deduplication eliminates redundant data
+              by keeping only one physical copy and referring other redundant data to that copy
+              with inclusive of D Traditional encryption.</p>
+          </div>
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Two</h3>
+              <p>ANALYSIS ON VOTING DATA -BY USING DEDUPLICATION TECHNIQUES IN CLOUD</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <a href="https://github.com/Ravan143007" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>EXPERIENCE</h2>
+        <p>Check out my Experience</p>
+      </div>
+
+      <article class="project">
+        <!-- experience -->
+        <div href="" class="card" id="exp">
+          <div class="popup-slider" id="popupSlider3" style="color: black;">
+            <h2>Associate Software Engineer, Softbrij Solutions Pvt Ltd [Jun 2022- May 2023]</h2>
+            <p>• Establishing personal rapport with future and present clients to identify requirements.
+              • Evaluating client needs, analyzing requirements, and develops software systems to
+              create and maintain applications and databases.
+              • Creating databases and spreadsheets, as well as designing applications
+              • Assist with the definition and review of application requirements and use cases.
+              • Need to create Custom reports by utilizing database and report-writing tools.</p>
+          </div>
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Associate Software Engineer</h3>
+              <p>Softbrij Solutions Pvt Ltd [Jun 2022- May 2023]</p>
+            </div>
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <a href="https://drive.google.com/file/d/1RN291mmBUi31269vbgtx115GtXbedpeG/view?usp=sharing" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>EDUCATION</h2>
+        <p>Check out my Education Background</p>
+      </div>
+
+      <article class="project">
+        <!-- education -->
+        <div href="" class="card" id="card1">
+          <div class="popup-slider" id="popupSlider4" style="color: black;">
+            <p>Saint Louis university, st louis MO - Expected in May 2025</p>
+          </div>
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Saint Louis University</h3>
+              <p>Master's Degree</p>
+            </div>
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div href="" class="card" id="card2">
+          <div class="popup-slider" id="popupSlider5" style="color: black;">
+            <p>Vel Tech university, India - Graduated</p>
+          </div>
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Vel Tech Rangarajan Dr. Sagunthala R&D institute of science and Technology</h3>
+              <p>Bachelor's Degree</p>
+            </div>
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <a href="https://drive.google.com/file/d/1RN291mmBUi31269vbgtx115GtXbedpeG/view?usp=sharing" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Skills</h2>
+        <p>Check out my Skills</p>
+      </div>
+
+      <article class="project">
+        <!-- skills -->
+        <div href="" class="">
+          <div class="">
+            <div class="project-bio">
+              <h3>Languages</h3>
+              <p>C, Python, SQL, HTML/CSS, Java</p>
+            </div>
+          </div>
+        </div>
+        <div href="" class="">
+          <div class="">
+            <div class="project-bio">
+              <h3>Frameworks</h3>
+              <p>NumPy, Pandas, Matplotlib, TensorFlow, Hadoop</p>
+            </div>
+          </div>
+        </div>
+        <div href="" class="">
+          <div class="">
+            <div class="project-bio">
+              <h3>Tools</h3>
+              <p>PyCharm, Jupyter Notebook, Visual Studio Code</p>
+            </div>
+          </div>
+        </div>
+        <div href="" class="">
+          <div class="">
+            <div class="project-bio">
+              <h3>Other</h3>
+              <p>Machine Learning, Microsoft Office, Teamwork and leadership</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <a href="https://drive.google.com/file/d/1RN291mmBUi31269vbgtx115GtXbedpeG/view?usp=sharing" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Contact Me</h2>
+        <p>Feel free to message me!</p>
+      </div>
+
+      <article class="">
+        <div class="background">
+          <div class="container">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>CONTACT</span>
+                    <span>ME</span>
+                  </div>
+                  <div class="app-contact">CONTACT INFO : +1 (314) 220-9037</div>
+                </div>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" id="fromName">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL" id="emailSender">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CONTACT NO" id="subjectSender">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE" id="message">
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button" id="#">CANCEL</button></br></br>
+                      <button class="app-form-button" onclick="sendMail()">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:Revanthvarma1110@gmail.com">Revanthvarma1110@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://www.facebook.com/revanthvarma143007?mibextid=ZbWKwL" target="_blank"
+            ><img src="./assets/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="https://x.com/Revanth74656705?t=v6Y6AS_j_jQdH3qrKUOcNQ&s=08" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com/in/revanth-varma-064449260/" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/Ravan143007" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <!-- Attribution -->
+        <div class="attribution">
+          <a
+            href="https://github.com/Ravan143007"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          </a>
+        </div>
+        <p>Copyright &copy; Reventh Varma <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
